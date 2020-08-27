@@ -16,7 +16,9 @@ struct ContentView: View {
             ForEach(0..<4) { vindex in
                 HStack {
                     ForEach(viewModel.cards) { card in
-                        CardView(card: card )
+                        CardView(card: card).onTapGesture {
+                            viewModel.choose(card: card)
+                        }
                     }
                 }
             }
