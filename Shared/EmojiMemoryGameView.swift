@@ -33,19 +33,23 @@ struct CardView: View {
     var card: MemoryGame<String>.Card
     
     var body: some View {
-        
         GeometryReader(content: { geometry in
-            ZStack {
-                if card.isFaceUp {
-                    RoundedRectangle(cornerRadius: cornerRadius).fill(Color.white)
-                    RoundedRectangle(cornerRadius: cornerRadius).stroke(lineWidth: edgeLineWidth)
-                    Text(card.content)
-                } else {
-                    RoundedRectangle(cornerRadius: cornerRadius).fill()
-                }
-            }
-            .font(Font.system(size: min(geometry.size.width, geometry.size.height) * fontScaleFactor))
+            body(for: geometry.size)
         })
+    }
+    
+    
+    func body (for size: CGSize) -> some View {
+        ZStack {
+            if card.isFaceUp {
+                RoundedRectangle(cornerRadius: cornerRadius).fill(Color.white)
+                RoundedRectangle(cornerRadius: cornerRadius).stroke(lineWidth: edgeLineWidth)
+                Text(card.content)
+            } else {
+                RoundedRectangle(cornerRadius: cornerRadius).fill()
+            }
+        }
+        .font(Font.system(size: fontSize(for: size)))
     }
     
     // MARK: - Drawing Constants
@@ -53,6 +57,9 @@ struct CardView: View {
     let edgeLineWidth: CGFloat = 3
     let fontScaleFactor: CGFloat = 0.75
     
+    func fontSize (for size: CGSize) -> CGFloat {
+        min(size.width, size.height) * fontScaleFactor
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
