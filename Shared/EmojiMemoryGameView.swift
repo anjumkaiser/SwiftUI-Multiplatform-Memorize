@@ -12,18 +12,11 @@ struct EmojiMemoryGameView: View {
     
     var body: some View {
         
-        VStack {
-            ForEach(0..<4) { vindex in
-                HStack {
-                    ForEach(viewModel.cards) { card in
-                        CardView(card: card).onTapGesture {
-                            viewModel.choose(card: card)
-                        }
-                    }
-                }
+        Grid(viewModel.cards) { card in
+            CardView(card: card).onTapGesture {
+                viewModel.choose(card: card)
             }
         }
-        
         .padding()
         .foregroundColor(.orange)
     }
