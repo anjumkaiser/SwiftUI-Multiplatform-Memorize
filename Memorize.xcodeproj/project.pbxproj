@@ -13,6 +13,8 @@
 		CD3F85E324F802BF00BBCC13 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3F85E124F802BF00BBCC13 /* EmojiMemoryGame.swift */; };
 		CD3F85E524F8C32600BBCC13 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3F85E424F8C32600BBCC13 /* Grid.swift */; };
 		CD3F85E624F8C32600BBCC13 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3F85E424F8C32600BBCC13 /* Grid.swift */; };
+		CD916D2D253E41E900E47262 /* Array+Only.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD916D2C253E41E900E47262 /* Array+Only.swift */; };
+		CD916D2E253E41E900E47262 /* Array+Only.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD916D2C253E41E900E47262 /* Array+Only.swift */; };
 		CD96667524FA064C00A46AF7 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD96667424FA064C00A46AF7 /* GridLayout.swift */; };
 		CD96667624FA064C00A46AF7 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD96667424FA064C00A46AF7 /* GridLayout.swift */; };
 		CDB0C29B2506D764007C7F84 /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB0C29A2506D764007C7F84 /* Array+Identifiable.swift */; };
@@ -29,6 +31,7 @@
 		CD3F85DE24F800DC00BBCC13 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		CD3F85E124F802BF00BBCC13 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 		CD3F85E424F8C32600BBCC13 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		CD916D2C253E41E900E47262 /* Array+Only.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Only.swift"; sourceTree = "<group>"; };
 		CD96667424FA064C00A46AF7 /* GridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
 		CDB0C29A2506D764007C7F84 /* Array+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
 		CDE814AD24F570B800288C9B /* MemorizeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeApp.swift; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 				CD3F85E424F8C32600BBCC13 /* Grid.swift */,
 				CD96667424FA064C00A46AF7 /* GridLayout.swift */,
 				CDB0C29A2506D764007C7F84 /* Array+Identifiable.swift */,
+				CD916D2C253E41E900E47262 /* Array+Only.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -214,6 +218,7 @@
 				CD3F85E524F8C32600BBCC13 /* Grid.swift in Sources */,
 				CDB0C29B2506D764007C7F84 /* Array+Identifiable.swift in Sources */,
 				CD3F85E224F802BF00BBCC13 /* EmojiMemoryGame.swift in Sources */,
+				CD916D2D253E41E900E47262 /* Array+Only.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +233,7 @@
 				CD3F85E624F8C32600BBCC13 /* Grid.swift in Sources */,
 				CDB0C29C2506D764007C7F84 /* Array+Identifiable.swift in Sources */,
 				CD3F85E324F802BF00BBCC13 /* EmojiMemoryGame.swift in Sources */,
+				CD916D2E253E41E900E47262 /* Array+Only.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +402,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 43XWV24N7U;
@@ -420,6 +427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 43XWV24N7U;
