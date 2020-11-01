@@ -40,7 +40,7 @@ struct CardView: View {
             Text(card.content)
                 .font(Font.system(size: fontSize(for: size)))
         }
-        .modifier(Cardify(isFaceUp: card.isFaceUp))
+        .cardify(isFaceUp: card.isFaceUp)
     }
     
     // MARK: - Drawing Constants
