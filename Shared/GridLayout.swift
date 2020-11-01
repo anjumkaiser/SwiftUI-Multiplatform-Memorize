@@ -12,7 +12,7 @@ struct GridLayout {
     private(set) var size: CGSize
     private(set) var rowCount: Int = 0
     private(set) var columnCount = 0
-    private var itemSize: CGSize
+    private(set) var itemSize: CGSize
     
     
     init (itemCount: Int, nearAspectRatio desiredAspectRatio: Double = 1, in size: CGSize) {
