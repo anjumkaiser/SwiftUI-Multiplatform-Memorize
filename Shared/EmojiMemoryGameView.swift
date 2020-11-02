@@ -52,6 +52,7 @@ struct CardView: View {
                     .animation(card.isCardMatched ? Animation.linear(duration: 1.0).repeatForever(autoreverses: false) : .default)
             }
             .cardify(isFaceUp: card.isFaceUp)
+            .transition(AnyTransition.scale)
         }
     }
     
